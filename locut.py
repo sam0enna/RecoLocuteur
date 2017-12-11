@@ -95,7 +95,7 @@ print('Compute the sufficient statistics')
 # Create a StatServer for the enrollment data and compute the statistics
 enroll_stat = sidekit.StatServer(enroll_idmap,
                                  distrib_nb=4,
-                                 feature_size=40)
+                                 feature_size=50)
 enroll_stat.accumulate_stat(ubm=ubm,
                             feature_server=features_server,
                             seg_indices=range(enroll_stat.segset.shape[0]),
